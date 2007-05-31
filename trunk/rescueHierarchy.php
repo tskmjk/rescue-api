@@ -7,25 +7,30 @@
  
 //error_reporting(E_ALL);
 
+
+if ((login("paul.mcgurn@gmail.com","Promot1on")) == "OK") 
+{
+	?>
+	<form method="post" action="https://secure.logmeinrescue.com/API/getHierarchy.aspx">
+	<input type="submit"></form>
+	
+<?php
+}
+
+
 //functions
 function login($email,$pwd){
-//url for the post to login
-$request = 'https://secure.logmeinrescue.com/API/login.aspx?';
-//concat email
-$request.="email=" . $email;
-//concast pwd
-$request.='&pwd=' . $pwd;
+
+	?>
+	<form method="POST" action="https://secure.logmeinrescue.com/API/login.aspx">
+	<input name=email value="<?php $email ?>" >
+	<input name=pwd value="<?php $pwd ?>">
+	<form action="submit">
+	</form>
+	<?php
+
 $output = $_POST["OUTPUT"];
 return $output;
 };
 
-
-if ((login("youremail","yourpassword")) != "OK") 
-{
-	?>
-	<form method="post" action="https://secure.logmeinrescue.com/API/getHierarchy.aspx">
-	<form action="submit"></form>
-	
-<?php
-}
 ?>
