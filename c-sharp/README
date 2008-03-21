@@ -1,0 +1,3 @@
+Examples in C# are compiled for ASP.NET 2.0 compatibility, 
+and use HttpWebRequest, which in turn uses the HTTP POST 
+variables listed in each action's specification.
