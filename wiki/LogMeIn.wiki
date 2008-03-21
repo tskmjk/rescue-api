@@ -5,5 +5,4 @@ LogMeIn, Inc. sells and distributes remote access software products.
 
 = Info =
 
-http://en.wikipedia.org/wiki/LogMeIn
 https://secure.logmein.com
