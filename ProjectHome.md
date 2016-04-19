@@ -1,0 +1,1 @@
+Examples on API connectivity to the LogMeIn Rescue API.
